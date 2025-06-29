@@ -10,15 +10,17 @@ import Detail from './components/Detail/Detail.js';
 
 function App() {
   return (
-    <>
-    <Navbar></Navbar>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/tool" element={<Tool />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/detail" element={<Detail />} />
-      </Routes>
-    </>
+    <div className="app">
+      <Navbar></Navbar>
+        <div className='content'>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/tool" element={<Tool />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/detail" element={<Detail />} />
+          </Routes>
+          </div>
+      </div>
   );
 }
 

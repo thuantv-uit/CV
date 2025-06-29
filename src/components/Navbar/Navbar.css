@@ -1,0 +1,59 @@
+/* Định dạng chung cho Navbar */
+.navbar {
+  display: flex;
+  justify-content: center; /* Căn giữa các item */
+  align-items: center;
+  background-color: rgb(177, 208, 219); /* Màu nền trắng */
+  padding: 15px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bóng đổ nhẹ */
+  position: sticky; /* Navbar bám dính khi cuộn */
+  top: 0;
+  z-index: 1000; /* Đảm bảo Navbar nằm trên các phần tử khác */
+}
+
+/* Định dạng cho các Link (các icon) */
+.navbar a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 30px; /* Khoảng cách giữa các icon */
+  color: #211bc4; /* Màu icon mặc định */
+  text-decoration: none; /* Bỏ gạch chân của Link */
+  transition: all 0.3s ease; /* Hiệu ứng chuyển động mượt mà */
+}
+
+/* Hiệu ứng khi hover vào icon */
+.navbar a:hover {
+  color: #da0e0e; /* Màu xanh khi hover */
+  transform: scale(1.2); /* Phóng to nhẹ */
+}
+
+/* Định dạng kích thước icon */
+.navbar a svg {
+  font-size: 38px; /* Kích thước icon */
+}
+
+/* Định dạng riêng cho icon Contact (có màu đỏ theo code của bạn) */
+.navbar a .contact-icon {
+  color: #ff4d4f; /* Màu đỏ cho icon Contact */
+}
+
+/* Hiệu ứng hover riêng cho icon Contact */
+.navbar a:hover .contact-icon {
+  color: #e63946; /* Màu đỏ đậm hơn khi hover */
+}
+
+/* Responsive cho thiết bị di động */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px; /* Giảm padding */
+  }
+
+  .navbar a {
+    margin: 0 10px; /* Giảm khoảng cách giữa các icon */
+  }
+
+  .navbar a svg {
+    font-size: 24px; /* Giảm kích thước icon */
+  }
+}

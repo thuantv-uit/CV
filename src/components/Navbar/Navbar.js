@@ -7,7 +7,7 @@ import HandymanIcon from '@mui/icons-material/Handyman';
 
 function Navbar() {
     return (
-        <div>
+        <div className='navbar'>
             <Link to="/"><HomeIcon></HomeIcon></Link>
             <Link to="/tool"><HandymanIcon></HandymanIcon></Link>
             <Link to="/detail"><PermIdentityIcon></PermIdentityIcon></Link>
