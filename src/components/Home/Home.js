@@ -6,13 +6,14 @@ import ApartmentIcon from '@mui/icons-material/Apartment';
 
 function Home() {
     return (
-        <div>
+        <div className='app'>
             <header className='header'>TRAN VAN THUAN</header>
                 <p>
                     <span className='icon-text-container'><EmailIcon></EmailIcon>thuantranuit2004@gmail.com</span>
                     <span className='icon-text-container'> <PhoneIcon></PhoneIcon> (+84) 984 091 038</span>
                     <span className='icon-text-container'> <GitHubIcon></GitHubIcon> https://github.com/thuantv-uit </span>
                 </p>
+                <hr/>
                 <h1>SUMMARY</h1>
                     <p>I am a third-year student at the University of Information Technology VNU-HCM, majoring in Computer
                     Networks and Data Communications. I am actively seeking job opportunities as a DevOps Engineer. I am

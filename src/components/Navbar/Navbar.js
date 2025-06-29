@@ -4,6 +4,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import PhoneIcon from '@mui/icons-material/Phone';
 import PermIdentityIcon from '@mui/icons-material/PermIdentity';
 import HandymanIcon from '@mui/icons-material/Handyman';
+import AppsIcon from '@mui/icons-material/Apps';
 
 function Navbar() {
     return (
@@ -11,7 +12,8 @@ function Navbar() {
             <Link to="/"><HomeIcon></HomeIcon></Link>
             <Link to="/tool"><HandymanIcon></HandymanIcon></Link>
             <Link to="/detail"><PermIdentityIcon></PermIdentityIcon></Link>
-            <Link to="/contact"><PhoneIcon color='red'></PhoneIcon></Link>
+            <Link to="/contact"><PhoneIcon></PhoneIcon></Link>
+            <Link to="/project"><AppsIcon></AppsIcon></Link>
         </div>
     )
 }
