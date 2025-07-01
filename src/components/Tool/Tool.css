@@ -1,0 +1,23 @@
+.header {
+    text-align: center; /* Căn giữa tiêu đề */
+    margin: 20px 0; /* Khoảng cách từ tiêu đề đến nội dung khác */
+}
+
+.image-container {
+    display: flex; /* Sử dụng Flexbox để sắp xếp ngang */
+    flex-wrap: wrap; /* Cho phép xuống dòng trên mobile */
+    /* justify-content: center; Căn giữa các hình ảnh */
+    gap: 30px; /* Khoảng cách giữa các hình ảnh */
+    margin: 20px 0; /* Khoảng cách từ container đến nội dung khác */
+}
+
+.image-item {
+    max-width: 100px; /* Kích thước tối đa cho mỗi hình ảnh */
+    height: auto; /* Giữ tỷ lệ */
+    border-radius: 20px; /* Góc bo tròn nhẹ */
+    transition: transform 0.3s; /* Hiệu ứng phóng to khi hover */
+}
+
+.image-item:hover {
+    transform: scale(1.2); /* Phóng to 10% khi rê chuột */
+}

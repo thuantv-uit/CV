@@ -1,0 +1,44 @@
+.app {
+  width: 100%;
+  max-width: 1050px; /* Chiều rộng khổ A4 */
+  min-height: 1123px; /* Chiều cao khổ A4 (có thể mở rộng) */
+  margin: 0 auto; /* Căn giữa */
+  background-color: #ffffff; /* Nền trắng cho nội dung */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bóng đổ nhẹ */
+  padding: 20px; /* Khoảng cách bên trong */
+  min-height: calc(1123px - 60px); /* Trừ chiều cao Navbar (ước lượng) */
+}
+
+.header {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    color: rgb(31, 16, 16);
+}
+
+p {
+    font-size: 20px;
+    line-height: 1;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+    .icon-text-container {
+        display: flex;
+        align-items: center; /* Vertically centers the icon and text */
+        gap: 8px; /* Adds space between the icon and text */
+    }
+
+        .icon-text-container span {
+        font-size: 16px; 
+    }
+
+    .icon-text-container i {
+        font-size: 18px; /* Adjust as needed for visual balance */
+    }
+
+        .icon-text-container i,
+    .icon-text-container span {
+        vertical-align: middle;
+    }
